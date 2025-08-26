@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de vendas</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>Análise de vendas</header>
+
+    <div class="filtro">
+        <label for="periodo">Período:</label>
+        <select id="periodo">
+            <option value="hoje">Hoje</option>
+            <option value="semana">Semana</option>
+            <option value="mes">Mês</option>
+        </select>
+        <button onclick="atualizarDashboard()">Aplicar</button>
+    </div>
+
+    <div class="dashboard">
+        <div class="card">
+            <h3>Vendas no Período</h3>
+            <h2 id="vendas">0</h2>
+            <p>Quantidade de refeições vendidas</p>
+        </div>
+        <div class="card">
+            <h3>Refeições Grátis Previsão</h3>
+            <h2 id="gratis">0</h2>
+            <p>Baseado em 1 grátis a cada 10</p>
+        </div>
+    </div>
+
+    <script>
+        function atualizarDashboard() {
+            let periodo = document.getElementById("periodo").value;
+            let vendas = 0;
+
+            // Simulação de vendas conforme período
+            if (periodo === "hoje") {
+                vendas = 35;
+            } else if (periodo === "semana") {
+                vendas = 220;
+            } else if (periodo === "mes") {
+                vendas = 890;
+            }
+
+            document.getElementById("vendas").innerText = vendas;
+
+            // Cálculo previsão grátis (1 grátis a cada 10 vendas)
+            let gratis = Math.floor(vendas / 10);
+            document.getElementById("gratis").innerText = gratis;
+        }
+
+        // Carregar dados iniciais
+        atualizarDashboard();
+    </script>
+
+    <div class="botoes">
+
+        <button>Listar Clientes</button>
+        <button>Excluir</button>
+
+
+
+    </div>
+
+</body>
+
+</html>

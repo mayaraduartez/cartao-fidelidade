@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu perfil</title>
+  <link rel="stylesheet" href="style2.css">
+
+</head>
+
+<body>
+  <div class="main">
+      <h1> Meu perfil:</h1>
+    <form enctype="multipart/form-data" method="post">
+      <div class="foto">
+        <img src="..." />
+        <input type="file" id="foto" name="foto" accept="image/*" />
+      </div>
+      <div class="info">
+        <div class="form-group">
+          <label>Nome:</label>
+          <input type="text" name="nome" value="Nome" />
+        </div>
+        <div class="form-group">
+          <label>CPF:</label>
+          <input type="text" name="cpf" value="CPF" />
+        </div>
+        <div class="form-group">
+          <label>Telefone:</label>
+          <input type="tel" name="telefone" value="Telefone" />
+        </div>
+        <div class="form-group">
+          <label>Endereço:</label>
+          <input type="text" name="endereco" value="Rua x" />
+        </div>
+        <div class="form-group">
+          <label>Meu QRcode:</label>
+          <img src="..." />
+        </div>
+        <h2>Histórico de Refeições</h2>
+        <table border="1" style="width:100%; border-collapse: collapse; text-align:center;">
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Refeição</th>
+              <th>Valor (R$)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>15/08/2025</td>
+              <td>Almoço livre</td>
+              <td>25,00</td>
+            </tr>
+            <tr>
+              <td>17/08/2025</td>
+              <td>Almoço Peso</td>
+              <td>35,00</td>
+            </tr>
+            <tr>
+              <td>19/08/2025</td>
+              <td>Almoço livre</td>
+              <td>15,00</td>
+            </tr>
+          </tbody>
+        </table>
+<br>
+        <button>Trocar senha</button>
+        <button>Atualizar Perfil</button>
+        <button>Renovar cartão</button>
+
+      </div>
+    </form>
+    <div class="dados-hist">
+
+    </div>
+  </div>
+</body>
+
+</html>
