@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tela de Promoções</title>
+  </head>
+  <body>
+    <div class="criar_promocao">
+      <h1>Criar Promoção</h1>
+
+      <label>Nome da Promoção</label>
+      <input name="nome_promocao" type="text" placeholder="Ex:Combo Verão" />
+
+      <br />
+
+      <label>Descrição</label>
+      <input type"text" name="Descrição" placeholder="Detalhes da promoção...">
+      <br />
+
+      <label>Quantidade de refeições para valer</label>
+      <input type="number" name="qtd_refeicoes" placeholder="Ex: 10" min="0" />
+
+      <br />
+
+      <label>Tipo de desconto:</label>
+      <select name="tipo_desconto">
+        <option value="porcentual">Desconto porcentual (%)</option>
+        <option value="fixo">Fixo (R$)</option>
+        <option value="metaCompras">Gastando R$ ganhe mais 1</option>
+      </select>
+
+      <br />
+
+      <label>Valor do desconto</label>
+      <input type="number" name="valor_desconto" step="0.01" />
+
+      <br />
+
+      <label>Data de início:</label>
+      <input type="date" name="data_inicio" />
+
+      <br />
+
+      <label>Data de término:</label>
+      <input type="date" name="data_termino" />
+
+      <br />
+
+      <label>Imagem da promoção (opcional):</label>
+      <input type="file" name="imagem_promocao" />
+
+      <br />
+
+      <button type="submit">Salvar Promoção</button>
+    </div>
+
+    <div class="promocoes">
+      <h2>Promoções vigentes</h2>
+
+      <table border="1" style="width: 100%; text-align: left">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Validade</th>
+            <th>Desconto aplicado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Combo Verão</td>
+            <td>Desconto de 20% na segunda refeição do dia</td>
+            <td>Até 30/09/2025</td>
+            <td>
+              <button onclick="estenderPromocao()">Estender</button>
+              <button onclick="editarPromocao()">Editar</button>
+              <button onclick="excluirPromocao()">Excluir</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
