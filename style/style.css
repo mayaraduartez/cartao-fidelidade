@@ -38,3 +38,10 @@ select, button {
     border-radius: 5px;
     border: 1px solid #ccc;
 }
+
+.grafico {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

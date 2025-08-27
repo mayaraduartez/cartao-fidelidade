@@ -71,3 +71,14 @@ margin: 5px 0;
 .login-box .links a:hover {
 text-decoration: underline;
 }
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-group img {
+    height: 150px;
+    width: 150px;
+}
