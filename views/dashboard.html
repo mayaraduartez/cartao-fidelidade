@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Análise de vendas</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -36,40 +36,11 @@
         </div>
     </div>
 
-    <script>
-        function atualizarDashboard() {
-            let periodo = document.getElementById("periodo").value;
-            let vendas = 0;
-
-            // Simulação de vendas conforme período
-            if (periodo === "hoje") {
-                vendas = 35;
-            } else if (periodo === "semana") {
-                vendas = 220;
-            } else if (periodo === "mes") {
-                vendas = 890;
-            }
-
-            document.getElementById("vendas").innerText = vendas;
-
-            // Cálculo previsão grátis (1 grátis a cada 10 vendas)
-            let gratis = Math.floor(vendas / 10);
-            document.getElementById("gratis").innerText = gratis;
-        }
-
-        // Carregar dados iniciais
-        atualizarDashboard();
-    </script>
-
-    <div class="botoes">
-
-        <button>Listar Clientes</button>
-        <button>Excluir</button>
-
-
-
+    <!-- aqui fica o grafico -->
+    <div class="grafico">
+        <canvas id="graficoVendas"></canvas>
     </div>
 
 </body>
-
+<script src="/js/criar-grafico.js"></script>
 </html>
