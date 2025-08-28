@@ -7,9 +7,10 @@
     <title>Tela de Promoções</title>
   </head>
   <body>
+    //classe para criar promoções
     <div class="criar_promocao">
       <h1>Criar Promoção</h1>
-
+      //formulário para criar promoções
       <label>Nome da Promoção</label>
       <input name="nome_promocao" type="text" placeholder="Ex:Combo Verão" />
 
@@ -23,7 +24,7 @@
       <input type="number" name="qtd_refeicoes" placeholder="Ex: 10" min="0" />
 
       <br />
-
+      //seleção do tipo de desconto
       <label>Tipo de desconto:</label>
       <select name="tipo_desconto">
         <option value="porcentual">Desconto porcentual (%)</option>
@@ -56,11 +57,12 @@
       <button type="submit">Salvar Promoção</button>
     </div>
 
+    //tabela para exibir promoções criadas
     <div class="promocoes">
       <h2>Promoções vigentes</h2>
-
       <table border="1" style="width: 100%; text-align: left">
         <thead>
+          /// cabeçalho da tabela
           <tr>
             <th>Nome</th>
             <th>Descrição</th>
@@ -69,12 +71,12 @@
           </tr>
         </thead>
         <tbody>
+          // corpo da tabela com promoções de exemplo
           <tr>
             <td>Combo Verão</td>
             <td>Desconto de 20% na segunda refeição do dia</td>
-            <td>Até 30/09/2025</td>
+            <td>15/09/2025 Até 30/09/2025</td>
             <td>
-              <button onclick="estenderPromocao()">Estender</button>
               <button onclick="editarPromocao()">Editar</button>
               <button onclick="excluirPromocao()">Excluir</button>
             </td>
