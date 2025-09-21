@@ -10,6 +10,11 @@ align-items: center;
 font-family: 'Open Sans', sans-serif;
 }
 
+.fundo-amarelo {
+  background-color: #ffffe0; /* amarelo claro */
+}
+
+
 
 h1 {
 font-size: 32px;
