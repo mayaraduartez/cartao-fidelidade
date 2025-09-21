@@ -5,50 +5,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recuperar Senha</title>
+
+  <!-- Bootstrap 4.1.3 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <!-- Seu CSS -->
   <link rel="stylesheet" href="/style/style2.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 
 <body class="fundo-amarelo">
-<body class="bg-light d-flex justify-content-center align-items-center vh-100">
-  <div class="text-center p-4 bg-white rounded shadow" style="max-width: 400px; width: 100%;">
-    
-    <!-- Logo -->
-    <img src="../img/logoRes.png" alt="Logo Sabor Caseiro" style="width: 100px; height: auto;" class="mb-3">
-
-    <!-- Título -->
-    <h1 class="h4 mb-4">Recupere a sua senha</h1>
-
-    <!-- Formulário -->
-    <form enctype="multipart/form-data" method="post">
-      <div class="mb-3 text-start">
-        <label for="exampleInputEmail1" class="form-label">Escreva o seu email</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text"></div>
+  <div class="container mt-5">
+    <div class="row justify-content-center align-items-center">
+      <!-- Logo à esquerda -->
+      <div class="col-md-4 text-left mb-4 mb-md-0">
+<img src="../img/logoRes.png" alt="Logo Sabor Caseiro" class="img-fluid" style="max-width: 250px;">
       </div>
 
-      <button type="button" class="btn btn-primary w-100">Enviar token</button>
+      <!-- Formulário à direita -->
+      <div class="col-md-6">
+        <h1 class="h4 mb-4 text-center">Recupere a sua senha</h1>
 
-      <script>
-  document.querySelector('.btn.btn-primary').addEventListener('click', function () {
-    const email = document.getElementById('exampleInputEmail1').value.trim();
+        <form enctype="multipart/form-data" method="post">
+          <div class="form-group text-left">
+            <label for="exampleInputEmail1">Escreva o seu email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted"></small>
+          </div>
 
-    if (email) {
-      alert(`Token enviado para: ${email}`);
-      // Aqui você pode adicionar lógica para enviar o token via backend futuramente
-    } else {
-      alert('Por favor, preencha o campo de email.');
-    }
-  });
-</script>
-
-    </form>
+          <button type="button" class="btn btn-primary btn-block">Enviar token</button>
+        </form>
+      </div>
+    </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
+  <script>
+    document.querySelector('.btn.btn-primary').addEventListener('click', function () {
+      const email = document.getElementById('exampleInputEmail1').value.trim();
+
+      if (email) {
+        alert(`Token enviado para: ${email}`);
+        // Aqui você pode adicionar lógica para enviar o token via backend futuramente
+      } else {
+        alert('Por favor, preencha o campo de email.');
+      }
+    });
+  </script>
 </body>
 
 </html>
