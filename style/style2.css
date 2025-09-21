@@ -14,6 +14,10 @@ font-family: 'Open Sans', sans-serif;
   background-color: #ffffe0; /* amarelo claro */
 }
 
+/* Fundo uniforme para todas as linhas do histórico de refeições */
+.historico-refeicoes tbody tr {
+  background-color: #fff5cc; /* tom suave de amarelo */
+}
 
 
 h1 {
