@@ -1,0 +1,34 @@
+[33m35aa685[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mtela-recuperar-senha[m[33m, [m[1;31morigin/tela-recuperar-senha[m[33m)[m Tela meuCartao atualizada.
+[33m3f4b09a[m Tela meu perfil logica funcionando.
+[33m21f41fb[m Tela Promoção com o fundo amarelo.
+[33md519577[m Tela Promoção com a lógica.
+[33m290f15e[m Tela prêmio com a logo
+[33m3b7f1ab[m Arrumeio o bootstrap tirei o quadrado
+[33m86d7bb2[m Arrumeio o bootstrap
+[33m39e1149[m Atualizei estilo e script tela principal
+[33mc2adb61[m Atualizei estilo e script da tela principal
+[33m8a24d6c[m Atualizei estilo com fundo amarelo na tela recuperarSenha
+[33m4a71163[m Atualizei estilo com fundo amarelo na tela restaurante
+[33mc551ae1[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m Criada tela de recuperação de senha
+[33m0e5f4ae[m Merge pull request #10 from mayaraduartez/feat/telas-modificadas
+[33mc09f7da[m[33m ([m[1;31morigin/feat/telas-modificadas[m[33m)[m feat: mudanças do cadastro ate loginAdm
+[33m025495e[m[33m ([m[1;31morigin/atualizar-botoes[m[33m)[m Merge pull request #9 from mayaraduartez/cadFunc-Taissa2
+[33m370920c[m[33m ([m[1;31morigin/cadFunc-Taissa2[m[33m)[m criação da tela de cadastro de funcionários
+[33mef84b4e[m Merge pull request #7 from mayaraduartez/dashborad
+[33mb7115ac[m[33m ([m[1;31morigin/dashborad[m[33m)[m criacao do grafico no dashboard e ajuste na tela meuperfil
+[33m5ecad22[m Merge pull request #6 from mayaraduartez/promocoes-login-cadastro-adm
+[33m393316b[m Merge pull request #5 from mayaraduartez/feat/telas-cartao-restaurantes-cartao-cliente
+[33m65fcfea[m[33m ([m[1;31morigin/promocoes-login-cadastro-adm[m[33m)[m Telas de login e cadastro do adm e tela de promoções
+[33mbc06f20[m[33m ([m[1;31morigin/feat/telas-cartao-restaurantes-cartao-cliente[m[33m)[m feat: cria tela de restaurantes com lista de unidades e cadastro
+[33m4a18f0a[m feat: adiciona página do administrador cartaoDoCliente.html
+[33me792f98[m fix: ajusta visualização do cartão na página meuCartao.html
+[33m4beaef0[m Merge pull request #4 from mayaraduartez/teste-ygor
+[33ma876338[m[33m ([m[1;31morigin/teste-ygor[m[33m)[m Meu perfil teste
+[33mc9ed9c7[m Merge pull request #3 from mayaraduartez/teste-ygor
+[33me2e779e[m teste ygor
+[33mc17b0eb[m teste ygor
+[33m0dd73eb[m Merge pull request #2 from mayaraduartez/feat/tela-promocoes
+[33m4dc7d15[m[33m ([m[1;31morigin/feat/tela-promocoes[m[33m)[m tela-promocoes teste
+[33m2322413[m almoço 11
+[33ma3da611[m first commit
+[33m6cdb846[m primeiro commit
