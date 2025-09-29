@@ -40,8 +40,8 @@
 
             </div>
 
-            <button type="button" class="btn btn-primary">Fazer Login</button>
-            <button type="button" class="btn btn-secondary">Esqueceu senha</button>
+            <button type="button" class="btn btn-primary" id="btnLogin">Fazer Login</button>
+            <button type="button" class="btn btn-secondary" id="recuperarsenha">Esqueceu senha</button>
 
 
         </form>
@@ -62,6 +62,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById("btnLogin").addEventListener("click", function (e) {
+        e.preventDefault();
+        window.location.href = "meuPerfil.html"; 
+     });
+    </script>
+    <script>
+        document.getElementById("recuperarsenha").addEventListener("click", function (e) {
+        e.preventDefault();
+        window.location.href = "recuperarSenha.html"; 
+     });
+    </script>
 </body>
 
 </html>

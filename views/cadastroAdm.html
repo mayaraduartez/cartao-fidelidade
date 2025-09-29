@@ -56,7 +56,7 @@
                         <input type="password" class="form-control" id="inputSenha2" name="confSenha2" placeholder="Confirme sua senha">
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Cadastre-se</button>
+                        <button type="submit" class="btn btn-primary" id="btnCadastro">Cadastre-se</button>
                     </div>
                 </form>
 
@@ -72,6 +72,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <script>
+      document.getElementById("btnCadastro").addEventListener("click", function (e) {
+    e.preventDefault();
+    window.location.href = "meuCartao.html"; 
+    });
+    </script>
 </body>
 
 
