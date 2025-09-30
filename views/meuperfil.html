@@ -27,7 +27,7 @@
   <div class="container mt-4">
     <h1 class="mb-4">Meu perfil</h1>
 
-    <form enctype="multipart/form-data" method="post">
+    <form action="atualizarPerfil" method="post" enctype="multipart/form-data">
       <div class="row">
         <!-- Coluna da foto + QR Code -->
         <div class="col-md-4 text-center mb-4">
@@ -49,19 +49,19 @@
         <div class="col-md-8">
           <div class="form-group">
             <label>Nome:</label>
-            <input type="text" name="nome" class="form-control" value="Nome">
+<input type="text" name="nome" class="form-control" placeholder="Nome">
           </div>
           <div class="form-group">
             <label>CPF:</label>
-            <input type="text" name="cpf" class="form-control" value="CPF">
+<input type="text" name="cpf" class="form-control" placeholder="CPF">
           </div>
           <div class="form-group">
             <label>Telefone:</label>
-            <input type="tel" name="telefone" class="form-control" value="Telefone" >
+<input type="tel" name="telefone" class="form-control" placeholder="Telefone">
           </div>
           <div class="form-group">
             <label>Endereço:</label>
-            <input type="text" name="endereco" class="form-control" value="Rua x">
+<input type="text" name="endereco" class="form-control" placeholder="Endereço">
           </div>
 
           <!-- Botões -->

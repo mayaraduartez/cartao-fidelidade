@@ -33,7 +33,8 @@
       <!-- Formulário -->
       <div class="col-md-6">
         <h2>Criar Promoção</h2>
-        <form id="formPromocao">
+        <form id="formPromocao" action="/salvar-promocao" method="post" enctype="multipart/form-data">
+
           <div class="form-group">
             <label>Nome da Promoção</label>
             <input name="nome_promocao" type="text" class="form-control" placeholder="Ex: Combo Verão" required>
@@ -116,8 +117,7 @@
   <!-- Lógica dos botões -->
   <script>
     document.getElementById("formPromocao").addEventListener("submit", function (e) {
-      e.preventDefault();
-
+     
       const nome = this.nome_promocao.value.trim();
       const descricao = this.descricao.value.trim();
       const dataTermino = this.data_termino.value;

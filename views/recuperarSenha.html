@@ -35,31 +35,31 @@
       <div class="col-md-6">
         <h1 class="h4 mb-4 text-center">Recupere a sua senha</h1>
 
-        <form enctype="multipart/form-data" method="post">
-          <div class="form-group text-left">
-            <label for="exampleInputEmail1">Escreva o seu email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted"></small>
-          </div>
+        <form action="/recuperar-senha" method="post">
+  <div class="form-group text-left">
+    <label for="email">Escreva o seu email</label>
+    <input type="email" class="form-control" id="email" name="email" required>
+    <small class="form-text text-muted">Digite o email cadastrado para receber o token.</small>
+  </div>
 
-          <button type="button" class="btn btn-primary btn-block">Enviar token</button>
-        </form>
+  <button type="submit" class="btn btn-primary btn-block">Enviar token</button>
+</form>
+
       </div>
     </div>
   </div>
 
-  <script>
-    document.querySelector('.btn.btn-primary').addEventListener('click', function () {
-      const email = document.getElementById('exampleInputEmail1').value.trim();
+ <script>
+  document.querySelector('form').addEventListener('submit', function (event) {
+    const email = document.getElementById('email').value.trim();
 
-      if (email) {
-        alert(`Token enviado para: ${email}`);
-        // Aqui você pode adicionar lógica para enviar o token via backend futuramente
-      } else {
-        alert('Por favor, preencha o campo de email.');
-      }
-    });
-  </script>
+    if (!email) {
+      event.preventDefault(); // Impede o envio se o campo estiver vazio
+      alert('Por favor, preencha o campo de email.');
+    }
+  });
+</script>
+
 </body>
 
 </html>
